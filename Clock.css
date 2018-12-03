@@ -1,0 +1,62 @@
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  background: #fff;
+  color: #666;
+}
+
+body {
+  margin: 0;
+}
+
+div.clock {
+  margin:30px;
+  width: 300px;
+  display:inline-block;
+}
+
+div.clock > h2.region {
+  color: #000;
+  font-size: 16px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin:8px;
+}
+
+div.clock > div.clock-container {
+  margin:0;
+  width: 300px;
+  height: 200px;
+  transition: box-shadow 0.2s ease-in-out;
+  background: #ed8e6e;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+div.clock > div.clock-container:hover{
+  box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
+}
+div.clock-container > div.day-mth-yr {
+  height: 20%;
+  background: #da8466;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.clock-container > div.time {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.time > span.running-time {
+  padding: 10px;
+  margin: 10px;
+  background: #da8466;
+}
